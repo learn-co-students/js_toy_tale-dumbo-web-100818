@@ -1,8 +1,8 @@
-const addBtn = document.querySelector('#new-toy-btn')
-const toyForm = document.querySelector('.container')
-let addToy = false
-
-// YOUR CODE HERE
+const addBtn = document.querySelector('#new-toy-btn');
+const toyForm = document.querySelector('.container');
+let nameInput = document.querySelector("#name");
+let imageInput = document.querySelector("#image");
+let addToy = false;
 
 addBtn.addEventListener('click', () => {
   // hide & seek with the form
@@ -10,16 +10,37 @@ addBtn.addEventListener('click', () => {
   if (addToy) {
     toyForm.style.display = 'block'
     // submit listener here
+    toyForm.addEventListener("submit", postToy)
   } else {
     toyForm.style.display = 'none'
   }
 })
 
+
+function postToy() {
+  let toyData = {
+    name: nameInput.value,
+    image: imageInput.value,
+    likes: 0
+  }
+  
+  fetch("http://localhost:3000/toys", {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify(toyData)
+  })
+  .then(resp => resp.json())
+  .then(json => console.log(json))
+};
+
 function fetchToys() {
   fetch("http://localhost:3000/toys")
     .then(resp => resp.json())
     .then(renderToys)
-}
+};
 
 function renderToys(json) {
   const toyCollection = document.querySelector("#toy-collection");
@@ -50,9 +71,8 @@ function addCard(toy) {
   cardElement.appendChild(likeElement);
   cardElement.appendChild(buttonElement);
   return cardElement;
-}
+};
 
-// OR HERE!
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("Page has loaded!");
   fetchToys();
