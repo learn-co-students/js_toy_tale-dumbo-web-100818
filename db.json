@@ -46,7 +46,19 @@
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": 7
+    },
+    {
+      "name": "Hello",
+      "image": "Hi",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "HIYA",
+      "image": "hello",
+      "likes": 0,
+      "id": 10
     }
   ]
 }
