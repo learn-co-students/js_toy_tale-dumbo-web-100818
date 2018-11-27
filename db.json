@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 4
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 10
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 2
     },
     {
       "id": 4,
@@ -47,6 +47,48 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Pupper",
+      "image": "https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg",
+      "likes": 10,
+      "id": 9
+    },
+    {
+      "name": "Pupper",
+      "image": "https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg",
+      "likes": 10,
+      "id": 10
+    },
+    {
+      "name": "Blue",
+      "image": "",
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "name": "Blue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Golde33443.jpg/280px-Golde33443.jpg",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "name": "Blue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Golde33443.jpg/280px-Golde33443.jpg",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "name": "Red",
+      "image": "https://86cb8127dc14737f5057-7c0671222953158607ea93d5febd68b4.ssl.cf1.rackcdn.com/660/assets/responsive/493000/493970/web_dog-puppy.jpg",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "name": "BB",
+      "image": "https://www.petmd.com/sites/default/files/petmd-shaking-puppy.jpg",
+      "likes": 0,
+      "id": 15
     }
   ]
 }
